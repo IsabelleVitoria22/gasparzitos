@@ -9,4 +9,9 @@
 - Página Stella: Resumo sobre o gênero Fantasia, dentro dessa explicação tem os seguintes tópicos: O que é, como surgui, filmes de destaque(nome, capa, sinópse,      diretores e elenco principal);
 - Página Thiago: Resumo sobre o gênero Comédia, dentro dessa explicação tem os seguintes tópicos: O que é, quando surgui, filmes de destaque(nome, capa, sinópse,      diretores e elenco principal)
     
-• Como abrir o site: basta clinar nos links html de cada página.
+• Como abrir o site: Digite paginas/
+- Stella: alunos-Stella
+- Enzo: aluno-Enzo
+- Thiago: aluno-ThiagoGaspar
+- Gabriel: aluno-Gabriel
+- Isabelle: aluno-ISABELLE
