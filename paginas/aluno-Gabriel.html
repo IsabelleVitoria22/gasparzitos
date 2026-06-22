@@ -1,40 +1,296 @@
+gabriel:
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terror • ESITG</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    radial-gradient(circle at top, rgba(229,9,20,0.35), transparent 40%),
+    linear-gradient(135deg,#0a0a0a,#141414,#1c0000);
+    color:white;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+    width:280px;
+    max-width:90%;
+    filter:drop-shadow(0 0 20px rgba(229,9,20,.7));
+    animation:flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+
+h1{
+    text-align:center;
+    color:#E50914;
+    font-size:3rem;
+    margin:20px 0 30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.secao{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(229,9,20,.15);
+}
+
+.secao h2{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.secao p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.filmes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.filme-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.filme-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(229,9,20,.4);
+}
+
+.filme-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.filme-info{
+    padding:20px;
+}
+
+.filme-info h3{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.filme-info p{
+    color:#ddd;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.btn-link{
+    display:inline-block;
+    margin-top:10px;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-link:hover{
+    background:#ff1f2f;
+}
+
+.voltar{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.voltar:hover{
+    background:#ff1f2f;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .filme-card img{
+        height:400px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">Terror</h1>
-    <hr>
-    <h2>Oque é?</h2>
-    <p>Esse tipo de gênero tem como objetivo principal provocar medo, suspense e tensão no público. Ele explora o desconhecido, o sobrenatural ou os limites da própria mente humana, refletindo os medos e traumas da sociedade em que é produzido.</p>
-    <h2>Quando surgiu?</h2>
-    <p>O gênero terror se originarizou na Europa em 1764 com o livro "O Castelo de Otranto", já quando falamos em sua presença no cinema foi um dos primeiros temas a serem abordados com os Monstros da Universal, por exemplo o Frankenstein, agora falando na atualidade o gênro se tornou um dos mais famosos principalmente entre os jovens, obras como "It" e "Pânico" são muito adoradas por essas pessoas.</p>
-    <h2>Filmes de destaque: </h2>
-    <ul>
-        <li>
-            <a href="https://pt.wikipedia.org/wiki/It_(2017)">It: A coisa</a>
-            <br>
-            <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/It_2017.jpg" height="500">
-            <p><b>Sinópse: </b>O filme "It: a coisa" acompanha um grupo de sete adolescentes na pacata cidade de Derry (Maine). Após crianças começarem a desaparecer misteriosamente, eles formam o "Clube dos Perdedores" e precisam enfrentar seus piores medos para derrotar Pennywise, um ser sobrenatural milenar que assume a forma de um palhaço assassino e se alimenta de traumas.</p>
-            <p><b>Diretor: </b>Andy Muschietti.</p>
-        </li>
-        <li>
-            <a href="https://pt.wikipedia.org/wiki/Scream_(2022)">Pânico V</a>
-            <br>
-            <img src="https://upload.wikimedia.org/wikipedia/pt/0/0e/Scream-5.png"height = "500">
-            <p><b>Sinópse: </b>O filme "Pânico V" acompanha a jovem Sam Carpenter, que retorna à sua cidade natal, Woodsboro, após uma série de novos ataques do assassino Ghostface. Vinte e cinco anos após os crimes originais, um novo serial killer passa a perseguir um grupo de adolescentes, obrigando os sobreviventes veteranos a intervir.</p>
-            <p><b>Diretores: </b>Matt Bettinelli-Olpin e Tyler Gillett.</p>
-        </li>
-        <li>
-           <a href="https://pt.wikipedia.org/wiki/Sexta-Feira_13_(2009)" >Sexta Feira 13(2009)</a>
-           <br>
-           <img src="https://upload.wikimedia.org/wikipedia/pt/d/dc/Fridaythe13th2009.jpg" height="500">
-           <p><b>Sinópse: </b>O filme "Sexta feira 13(2009)" como reboot (reinício) da clássica franquia slasher. A trama acompanha Clay Miller (Jared Padalecki) em uma busca desesperada por sua irmã desaparecida, Whitney (Amanda Righetti), que foi capturada pelo infame assassino mascarado Jason Voorhees (Derek Mears) nas sombrias florestas de Crystal Lake.</p>
-           <p><b>Diretor: </b>Marcus Nispel.</p>
-        </li>
-    </ul>
+
+<div class="container">
+
+<img src="logo-esitg.png" alt="Logo ESITG" class="logo">
+
+<h1>👻 Terror</h1>
+
+<div class="secao">
+
+    <h2>O que é?</h2>
+
+    <p>
+        O gênero terror tem como objetivo provocar medo, suspense e tensão no público.
+        Ele explora o desconhecido, o sobrenatural e os limites da mente humana,
+        refletindo os medos e traumas presentes na sociedade.
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>Quando Surgiu?</h2>
+
+    <p>
+        O terror surgiu na literatura europeia em 1764 com a obra
+        <b>O Castelo de Otranto</b>. No cinema, foi um dos primeiros gêneros explorados,
+        destacando-se com os clássicos monstros da Universal, como Frankenstein e Drácula.
+        Atualmente, continua sendo um dos gêneros mais populares, especialmente entre os
+        jovens, com sucessos como <b>It</b> e <b>Pânico</b>.
+    </p>
+
+</div>
+
+<h1 style="font-size:2rem;">Filmes em Destaque</h1>
+
+<div class="filmes">
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/It_2017.jpg" alt="It A Coisa">
+
+        <div class="filme-info">
+
+            <h3>It: A Coisa (2017)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Um grupo de sete adolescentes da cidade de Derry precisa enfrentar
+                Pennywise, um ser sobrenatural que assume a forma de um palhaço
+                assustador e se alimenta dos medos de suas vítimas.
+            </p>
+
+            <p><b>Diretor:</b> Andy Muschietti</p>
+
+            <a href="https://pt.wikipedia.org/wiki/It_(2017)"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/0/0e/Scream-5.png" alt="Pânico V">
+
+        <div class="filme-info">
+
+            <h3>Pânico V (2022)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Sam Carpenter retorna à cidade de Woodsboro após uma nova série de
+                assassinatos cometidos por Ghostface. Os sobreviventes dos filmes
+                anteriores precisam agir para impedir o novo assassino.
+            </p>
+
+            <p>
+                <b>Diretores:</b> Matt Bettinelli-Olpin e Tyler Gillett
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/Scream_(2022)"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/dc/Fridaythe13th2009.jpg" alt="Sexta Feira 13">
+
+        <div class="filme-info">
+
+            <h3>Sexta-Feira 13 (2009)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Clay Miller procura sua irmã desaparecida nas proximidades de Crystal Lake,
+                sem imaginar que ela foi capturada pelo lendário assassino mascarado
+                Jason Voorhees.
+            </p>
+
+            <p><b>Diretor:</b> Marcus Nispel</p>
+
+            <a href="https://pt.wikipedia.org/wiki/Sexta-Feira_13_(2009)"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<a href="index.html" class="voltar">
+    ⬅ Voltar ao Menu
+</a>
+
+</div>
+
 </body>
 </html>

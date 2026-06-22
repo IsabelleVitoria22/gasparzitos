@@ -1,52 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genero Comedia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comédia • ESITG</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    radial-gradient(circle at top, rgba(229,9,20,0.35), transparent 40%),
+    linear-gradient(135deg,#0a0a0a,#141414,#1c0000);
+    color:white;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+    width:280px;
+    max-width:90%;
+    filter:drop-shadow(0 0 20px rgba(229,9,20,.7));
+    animation:flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+
+h1{
+    text-align:center;
+    color:#E50914;
+    font-size:3rem;
+    margin:20px 0 30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.secao{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(229,9,20,.15);
+}
+
+.secao h2{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.secao p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.filmes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.filme-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.filme-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(229,9,20,.4);
+}
+
+.filme-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.filme-info{
+    padding:20px;
+}
+
+.filme-info h3{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.filme-info p{
+    color:#ddd;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.btn-link{
+    display:inline-block;
+    margin-top:10px;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-link:hover{
+    background:#ff1f2f;
+}
+
+.voltar{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.voltar:hover{
+    background:#ff1f2f;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .filme-card img{
+        height:400px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
-    <center><h1>Comedia</h1></center>
-    <hr>
-    <h2>Como surgiu:</h2>
-    <p>A comédia no cinema surgiu nos Estados Unidos e na França no final do século XIX, logo no nascimento da própria sétima arte em 1895, com o curta O Regador Regado dos irmãos Lumière. Inicialmente, o gênero se baseava no slapstick (comédia pastelão), usando humor puramente visual, mímicas e acrobacias corporais devido à ausência de som. Com a transição para o cinema falado na década de 1930, o estilo se transformou, dando lugar a diálogos rápidos, sátiras sociais e comédias românticas sofisticadas.</p>
-    <h2>Filmes de destaque:</h2>
-    <ul>
-        <li><a href="https://pt.wikipedia.org/wiki/The_Hangover_Part_II" target="_blank"> Se Beber, Não Case! Parte II</a></li>
-        <br>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/The_Hangover_Part_II.jpg" width="15%">
-        <br>
-        <li>Sinopse: Em "Se Beber, Não Case! Parte II", após o desastre em Las Vegas, Stu vai se casar na exótica Tailândia. Querendo evitar outra loucura, ele organiza apenas um café da manhã tranquilo. No entanto, a ressaca se repete, o grupo acorda em um hotel decadente em Bangkok e o irmão da noiva desaparece.</li>
-        <br>
-        <li>
-            Diretor: Todd Phillips
-        </li>
-        <br>
-        <li>Elenco principal: Bradley Cooper, Ed Helms, Zach Galifianakis, Justin Bartha e Ken Jeong</li>
-        <br>
-        <li><a href="https://pt.wikipedia.org/wiki/Grown_Ups"> Gente Grande</a></li>
-        <br>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/f/fe/Grownupsmovie.jpg" width="15%">
-        <br>
-        <li>
-            Sinopse: após a morte do querido treinador de basquete, cinco amigos de infância se reencontram no feriado de 4 de Julho. Junto com suas esposas e filhos, eles alugam uma casa no lago para um fim de semana, redescobrindo o valor da amizade e os desafios da vida adulta.
-        </li>
-        <br>
-        <li>Diretor: Dennis Dugan</li>
-        <br>
-        <li>Elenco: Adam Sandler, Kevin James, Chris Rock, David Spade e Rob Schneider</li>
-        <br>
-        <li><a href="https://pt.wikipedia.org/wiki/American_Pie_(filme)"> American Pie</a></li>
-        <br>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/2/23/American_pie_poster_promocional.jpg" width="20%">
-        <br>
-        <li>
-            Sinopse: acompanha quatro amigos do ensino médio — Jim, Kevin, Oz e Finch — que fazem um pacto desesperado: perder a virgindade antes da noite do baile de formatura. O grupo entra em diversas situações hilárias e constrangedoras na tentativa de atingir o objetivo
-        </li>
-        <br>
-        <li>Diretor: Paul Weitz</li>
-        <br>
-        <li>Elenco princiapl: Jason Biggs, Chris Klein, Thomas Ian Nicholas, Chris Owen e Seann William Scott</li>
-    </ul>
+
+<div class="container">
+
+<img src="logo-esitg.png" alt="Logo ESITG" class="logo">
+
+<h1>😂 Comédia</h1>
+
+<div class="secao">
+
+    <h2>Como Surgiu?</h2>
+
+    <p>
+        A comédia no cinema surgiu nos Estados Unidos e na França no final do século XIX,
+        logo após o nascimento da própria sétima arte em 1895, com o curta-metragem
+        <b>O Regador Regado</b>, dos irmãos Lumière. Inicialmente, o gênero se baseava
+        no humor visual, conhecido como <i>slapstick</i>, utilizando mímicas e situações
+        engraçadas devido à ausência de som. Com a chegada do cinema falado na década de
+        1930, surgiram diálogos rápidos, sátiras sociais e comédias românticas que
+        consolidaram o gênero como um dos mais populares do mundo.
+    </p>
+
+</div>
+
+<h1 style="font-size:2rem;">Filmes em Destaque</h1>
+
+<div class="filmes">
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/The_Hangover_Part_II.jpg" alt="Se Beber Não Case">
+
+        <div class="filme-info">
+
+            <h3>Se Beber, Não Case! Parte II</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Após os acontecimentos em Las Vegas, Stu decide se casar na Tailândia.
+                Para evitar problemas, ele planeja uma comemoração tranquila, mas o grupo
+                acorda novamente sem memória dos acontecimentos da noite anterior e precisa
+                encontrar o irmão da noiva desaparecido.
+            </p>
+
+            <p><b>Diretor:</b> Todd Phillips</p>
+
+            <p>
+                <b>Elenco:</b> Bradley Cooper, Ed Helms,
+                Zach Galifianakis, Justin Bartha e Ken Jeong.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/The_Hangover_Part_II"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/f/fe/Grownupsmovie.jpg" alt="Gente Grande">
+
+        <div class="filme-info">
+
+            <h3>Gente Grande</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Após a morte do treinador de basquete da infância, cinco amigos se
+                reencontram com suas famílias para passar um final de semana juntos,
+                revivendo memórias, fortalecendo amizades e enfrentando os desafios da vida adulta.
+            </p>
+
+            <p><b>Diretor:</b> Dennis Dugan</p>
+
+            <p>
+                <b>Elenco:</b> Adam Sandler, Kevin James,
+                Chris Rock, David Spade e Rob Schneider.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/Grown_Ups"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/2/23/American_pie_poster_promocional.jpg" alt="American Pie">
+
+        <div class="filme-info">
+
+            <h3>American Pie</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Quatro amigos do ensino médio fazem um pacto para perder a virgindade
+                antes da formatura. Em meio a situações constrangedoras e engraçadas,
+                eles descobrem mais sobre amizade, relacionamentos e amadurecimento.
+            </p>
+
+            <p><b>Diretor:</b> Paul Weitz</p>
+
+            <p>
+                <b>Elenco:</b> Jason Biggs, Chris Klein,
+                Thomas Ian Nicholas, Chris Owen e Seann William Scott.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/American_Pie_(filme)"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<a href="index.html" class="voltar">
+    ⬅ Voltar ao Menu
+</a>
+
+</div>
+
 </body>
 </html>

@@ -1,33 +1,308 @@
+enzo:
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acão</title>
-    <link rel="icon " href="https://s2-memoriaglobo.glbimg.com/F4yoL7Tb09rnZFun2nWSQXUbFq4=/0x58:648x423/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_ee6202d7f3f346a7a5d7affb807d8893/internal_photos/bs/2024/A/w/DKEesrQqaolKM3nN1viw/acao.jpg">
-</head>
-<body>
-    <h2><center> Ação</center></h2>
-<hr>
-<p><strong>O que é o tema (gênero):</strong> O gênero de ação é um estilo de cinema focado em narrativas de alta energia, que priorizam o impacto visual e físico sobre o drama puramente dialógico. Ele é caracterizado por sequências de combates corporais, tiroteios, perseguições de veículos, explosões, acrobatacias e resgates de alto risco, onde o protagonista enfrenta grandes perigos para alcançar um objetivo ou derrotar um antagonista.</p>
-<hr>
-<p><strong>Como surgiu:</strong> O cinema de ação tem suas raízes nos primórdios da sétima arte, originando-se de filmes mudos de faroeste e perseguição como "O Grande Roubo do Trem" (1903). Nas décadas de 1920 e 1930, os filmes de capa e espada (com duelos de espadas) trouxeram coreografias complexas. O gênero moderno se consolidou fortemente entre os anos 1970 e 1980, com a popularização mundial dos filmes de artes marciais (liderados por Bruce Lee) e com as superproduções de Hollywood estreladas por ícones como Sylvester Stallone e Arnold Schwarzenegger.</p>
-<hr>
-<p><strong>Filmes de destaque:</strong></p>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ação • ESITG</title>
 
-<p><strong>Nome:</strong> Matrix (1999)</p>
-<p><strong>Capa:</strong> <img src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Imagem ilustrativa de Matrix (Código Digital)" width="200"></p>
-<p><strong>Sinopse:</strong> Um programador de computador descobre que toda a sua realidade é uma simulação virtual criada por máquinas para dominar a humanidade. Ele se junta a um grupo de rebeldes para lutar pela liberdade no mundo real através de combates e habilidades extraordinárias.</p>
-<hr>
-<p><strong>Nome:</strong> Mad Max: Estrada da Fúria (2015)</p>
-<p><strong>Capa:</strong> <img src="https://play-lh.googleusercontent.com/4jEtcyD2lETV4XbD7Tz-epv7z4f9MK07hPNG1ZvwShJP1eIHg5rdDrDDNM8YMDQdR_hW6YbAPNDb0kydkg" alt="Imagem ilustrativa de Mad Max (Deserto pós-apocalíptico)" width="200"></p>
-<p><strong>Sinopse:</strong> Em um futuro pós-apocalíptico desértico, um andarilho solitário chamado Max é capturado por um tirano. Ele acaba se unindo à Imperatriz Furiosa em uma fuga implacável a bordo de um caminhão blindado, iniciando uma guerra de estrada em alta velocidade.</p>
-<hr>
-<p><strong>Nome:</strong> Duro de Matar (1988)</p>
-<p><strong>Capa:</strong> <img src="https://www.cafecomfilme.com.br/media/k2/items/cache/620ba7bb730e2fa7c5bcf4375653194e_XL.jpg?t=20171108_152038" alt="Imagem ilustrativa de Duro de Matar (Prédio de Cinema)" width="200"></p>
-<p><strong>Sinopse:</strong> O detetive de Nova York, John McClane, visita sua esposa em Los Angeles em uma festa de Natal no edifício Nakatomi Plaza. O plano falha quando um grupo de terroristas altamente armados invade o prédio e faz todos de reféns, forçando McClane a iniciar uma guerra de um homem só.</p>
-<hr>
-<p><strong>Diretores de Destaque:</strong></p>
-<p>James Cameron, George Miller, John Woo, Akira Kurosawa, Christopher Nolan, Kathryn Bigelow, Chad Stahelski e Steven Spielberg.</p>
+<link rel="icon" href="https://s2-memoriaglobo.glbimg.com/F4yoL7Tb09rnZFun2nWSQXUbFq4=/0x58:648x423/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_ee6202d7f3f346a7a5d7affb807d8893/internal_photos/bs/2024/A/w/DKEesrQqaolKM3nN1viw/acao.jpg">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    radial-gradient(circle at top, rgba(229,9,20,0.35), transparent 40%),
+    linear-gradient(135deg,#0a0a0a,#141414,#1c0000);
+    color:white;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+    width:280px;
+    max-width:90%;
+    filter:drop-shadow(0 0 20px rgba(229,9,20,.7));
+    animation:flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+
+h1{
+    text-align:center;
+    color:#E50914;
+    font-size:3rem;
+    margin:20px 0 30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.secao{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(229,9,20,.15);
+}
+
+.secao h2{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.secao p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.filmes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.filme-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.filme-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(229,9,20,.4);
+}
+
+.filme-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.filme-info{
+    padding:20px;
+}
+
+.filme-info h3{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.filme-info p{
+    color:#ddd;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.btn-link{
+    display:inline-block;
+    margin-top:10px;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-link:hover{
+    background:#ff1f2f;
+}
+
+.voltar{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.voltar:hover{
+    background:#ff1f2f;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .filme-card img{
+        height:400px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo-esitg.png" alt="Logo ESITG" class="logo">
+
+<h1>🎬 Ação</h1>
+
+<div class="secao">
+
+    <h2>O que é?</h2>
+
+    <p>
+        O gênero de ação é um estilo cinematográfico focado em narrativas de alta energia,
+        priorizando o impacto visual e físico. É caracterizado por perseguições,
+        combates, explosões, resgates de alto risco, artes marciais e confrontos
+        intensos, nos quais o protagonista enfrenta grandes perigos para alcançar
+        seus objetivos.
+    </p>
+
+</div>
+
+<div class="secao">
+
+    <h2>Como Surgiu?</h2>
+
+    <p>
+        O cinema de ação tem suas origens nos primeiros filmes da história,
+        especialmente nos faroestes e filmes de perseguição, como
+        <b>O Grande Roubo do Trem (1903)</b>.
+        Nas décadas seguintes, os filmes de capa e espada trouxeram lutas coreografadas
+        e aventuras épicas. O gênero moderno ganhou força entre os anos 1970 e 1980,
+        impulsionado pelos filmes de artes marciais de Bruce Lee e pelas superproduções
+        estreladas por atores como Sylvester Stallone e Arnold Schwarzenegger.
+    </p>
+
+</div>
+
+<h1 style="font-size:2rem;">Filmes em Destaque</h1>
+
+<div class="filmes">
+
+    <div class="filme-card">
+
+        <img src="https://m.media-amazon.com/images/M/MV5BNThiYTQzOTUtNmFjYy00OWEwLTg2NWUtMmM3NGE0YjFjOWRjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Matrix">
+
+        <div class="filme-info">
+
+            <h3>Matrix (1999)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Um programador descobre que a realidade é uma simulação criada por
+                máquinas para controlar a humanidade. Ao lado de rebeldes, ele inicia
+                uma luta pela liberdade usando habilidades extraordinárias.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/Matrix"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://play-lh.googleusercontent.com/4jEtcyD2lETV4XbD7Tz-epv7z4f9MK07hPNG1ZvwShJP1eIHg5rdDrDDNM8YMDQdR_hW6YbAPNDb0kydkg"
+             alt="Mad Max">
+
+        <div class="filme-info">
+
+            <h3>Mad Max: Estrada da Fúria (2015)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Em um mundo pós-apocalíptico, Max se une à Imperatriz Furiosa em uma
+                fuga eletrizante através do deserto, enfrentando um exército em uma
+                das perseguições mais famosas do cinema.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/Mad_Max:_Fury_Road"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://www.cafecomfilme.com.br/media/k2/items/cache/620ba7bb730e2fa7c5bcf4375653194e_XL.jpg"
+             alt="Duro de Matar">
+
+        <div class="filme-info">
+
+            <h3>Duro de Matar (1988)</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Durante uma festa de Natal em Los Angeles, o policial John McClane
+                precisa enfrentar sozinho um grupo de criminosos que tomou um prédio
+                inteiro e fez dezenas de pessoas reféns.
+            </p>
+
+            <a href="https://pt.wikipedia.org/wiki/Die_Hard"
+               target="_blank"
+               class="btn-link">
+               Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="secao" style="margin-top:30px;">
+
+    <h2>Diretores de Destaque</h2>
+
+    <p>
+        James Cameron, George Miller, John Woo, Akira Kurosawa,
+        Christopher Nolan, Kathryn Bigelow, Chad Stahelski e
+        Steven Spielberg.
+    </p>
+
+</div>
+
+<a href="index.html" class="voltar">
+    ⬅ Voltar ao Menu
+</a>
+
+</div>
+
 </body>
 </html>

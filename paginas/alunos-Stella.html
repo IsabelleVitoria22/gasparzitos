@@ -1,69 +1,319 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasia • ESITG</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:
+    radial-gradient(circle at top, rgba(229,9,20,0.35), transparent 40%),
+    linear-gradient(135deg,#0a0a0a,#141414,#1c0000);
+    color:white;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo{
+    display:block;
+    margin:auto;
+    width:280px;
+    max-width:90%;
+    filter:drop-shadow(0 0 20px rgba(229,9,20,.7));
+    animation:flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-8px);}
+    100%{transform:translateY(0);}
+}
+
+h1{
+    text-align:center;
+    color:#E50914;
+    font-size:3rem;
+    margin:20px 0 30px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+.secao{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(229,9,20,.15);
+}
+
+.secao h2{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.secao p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.filmes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.filme-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.filme-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(229,9,20,.4);
+}
+
+.filme-card img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.filme-info{
+    padding:20px;
+}
+
+.filme-info h3{
+    color:#E50914;
+    margin-bottom:15px;
+}
+
+.filme-info p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+.btn-link{
+    display:inline-block;
+    margin-top:15px;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-link:hover{
+    background:#ff1f2f;
+}
+
+.voltar{
+    display:block;
+    width:220px;
+    margin:40px auto;
+    text-align:center;
+    background:#E50914;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.voltar:hover{
+    background:#ff1f2f;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .filme-card img{
+        height:400px;
+    }
+
+}
+
+</style>
 </head>
+
 <body>
-    <h1 style="text-align: center;">Fantasia</h1>
-    <hr>
-    
-    <h2>O que é ?</h2>
-    <p>O tema fantasia no cinema é um gênero de ficção onde a magia, o sobrenatural, a mitologia e mundos imaginários são os elementos centrais da história. Nessas produções, as leis da física e da realidade dão lugar à imaginação, permitindo que o impossível aconteça.</p>
+
+<div class="container">
+
+<img src="logo-esitg.png" alt="Logo ESITG" class="logo">
+
+<h1>🧙 Fantasia</h1>
+
+<div class="secao">
+
+    <h2>O que é?</h2>
+
+    <p>
+        O tema fantasia no cinema é um gênero de ficção onde a magia, o sobrenatural,
+        a mitologia e mundos imaginários são os elementos centrais da história.
+        Nessas produções, as leis da física e da realidade dão lugar à imaginação,
+        permitindo que o impossível aconteça.
+    </p>
+
+</div>
+
+<div class="secao">
 
     <h2>Como Surgiu?</h2>
-    <p>O tema fantasia surgiu no cinema junto com a própria invenção da sétima arte, quando o cineasta e mágico Georges Méliès lançou o curta-metragem mudo Viagem à Lua em 1902, utilizando truques de ilusionismo e efeitos visuais inovadores para a época. Nas décadas seguintes, o gênero ganhou força comercial através do cinema de animação, consolidando-se com o lançamento de Branca de Neve e os Sete Anões em 1937 pela Disney. Pouco depois, em 1940, o estúdio elevou a ousadia artística com o filme Fantasia, que uniu animação abstrata a grandes composições de música clássica. Por fim, a partir da década de 1970, o avanço da tecnologia e dos efeitos especiais permitiu que Hollywood criasse produções épicas e mundos altamente complexos, atingindo o seu ápice moderno com o sucesso da trilogia O Senhor dos Anéis.</p>
-    
-    <h2>Filmes de destaque:</h2>
-
-    <a href="https://pt.wikipedia.org/wiki/Star_Wars:_Epis%C3%B3dio_III_%E2%80%93_A_Vingan%C3%A7a_dos_Sith" target="_blank">
-        Star Wars: Episódio III – A Vingança dos Sith
-    </a>
-    <br><br>
-    <img src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_.jpg" alt="Póster de Star Wars" width="150">
-    <br><br>
 
     <p>
-        <b>Sinópse: </b>
-        Em Star Wars: Episódio III, as Guerras Clônicas estão em pleno andamento e as diferenças entre o Conselho Jedi e o Chanceler Palpatine (Ian McDiarmid) aumentam cada vez mais. Anakin Skywalker (Hayden Christensen) mantém um elo de lealdade com Palpatine, ao mesmo tempo em que luta para que seu casamento com Padmé Amidala (Natalie Portman) não seja afetado por esta situação. Seduzido por promessas de poder, Anakin se aproxima cada vez mais de Darth Sidious (Ian McDiarmid) até se tornar o temível Darth Vader. Juntos eles tramam um plano para aniquilar de uma vez por todas com os cavaleiros jedi.
-        <br><br>
-        <b>Diretor: </b> George Lucas. 
-        <br><br>
-        <b>Elenco principal: </b> Hayden Christensen - Darth Vader; Ewan McGregor - Obi-Wan Kenobi; Ian McDiarmid - Darth Sidious; Natalie Portman - Padmé Amidala.
-    </p>
-     <a href="https://pt.wikipedia.org/wiki/Harry_Potter_e_a_Pedra_Filosofal_%28filme%29" target="_blank">
-        Harry Potter e a pedra filosofal 
-    </a>
-
-
-    <br><br>
-   <img src="https://upload.wikimedia.org/wikipedia/pt/1/1d/Harry_Potter_Pedra_Filosofal_2001.jpg" alt="Póster de Harry Potter" width="150"> 
-    <br><br>
-
-    <p>
-        <b>Sinópse: </b>
-        Harry Potter (Daniel Radcliffe) é um garoto órfão de 10 anos que vive infeliz com seus tios, os Dursley. Até que, repentinamente, ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente Harry é impedido de ler a carta por seu tio Válter (Richard Griffiths), mas logo ele recebe a visita de Hagrid (Robbie Coltrane), o guarda-caça de Hogwarts, que chega em sua casa para levá-lo até a escola. A partir de então Harry passa a conhecer um mundo mágico que jamais imaginara, vivendo as mais diversas aventuras com seus mais novos amigos, Rony Weasley (Rupert Grint) e Hermione Granger (Emma Watson).
-        <br><br>
-        <b>Diretor: </b> Chris Columbus
-        <br><br>
-        <b>Elenco principal: </b> Daniel Radcliffe - Harry Potter; Emma Watson - Hermione Granger; Rupert Grint - Ron Weasley; Alan Rickman - Severo Snape. 
+        O tema fantasia surgiu no cinema junto com a própria invenção da sétima arte,
+        quando o cineasta e mágico Georges Méliès lançou o curta-metragem mudo
+        Viagem à Lua em 1902, utilizando truques de ilusionismo e efeitos visuais
+        inovadores para a época.
+        Nas décadas seguintes, o gênero ganhou força comercial através do cinema
+        de animação, consolidando-se com o lançamento de Branca de Neve e os Sete
+        Anões em 1937 pela Disney.
+        Pouco depois, em 1940, o estúdio elevou a ousadia artística com o filme
+        Fantasia, que uniu animação abstrata a grandes composições de música clássica.
+        A partir da década de 1970, os avanços tecnológicos permitiram a criação de
+        produções épicas e mundos altamente complexos, alcançando o auge moderno
+        com O Senhor dos Anéis.
     </p>
 
-    <a href="https://en.wikipedia.org/wiki/How_to_Train_Your_Dragon" target="_blank">
-        Como Treinar o Seu Dragão
-    </a> 
-    <br><br>
-    <img src="https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_.jpg" alt="Póster de dragão" width="150">
-    <br><br>
-    <p>
-        <b>Sinópse: </b>
-        Na island de Berk, um garoto viking chamado Soluço desafia a tradição ao fazer amizade com o dragão Banguela. No entanto, quando uma ameaça surge, a amizade de Soluço com Banguela se torna a chave para forjar um novo futuro.
-        <br><br>
-        <b>Diretor: </b> Chris Sanders e Dean DeBlois 
-        <br><br>
-        <b>Elenco principal: </b> Mason Thames - Soluço; Nico Parker - Astrid Hofferson; Gerard Butler - Stoico; Julian Dennison - Perna-de-Peixe. 
-    </p>
+</div>
+
+<h1 style="font-size:2rem;">Filmes em Destaque</h1>
+
+<div class="filmes">
+
+    <div class="filme-card">
+
+        <img src="https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_.jpg">
+
+        <div class="filme-info">
+
+            <h3>Star Wars: Episódio III</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                As Guerras Clônicas estão em andamento e Anakin Skywalker é seduzido
+                pelo lado sombrio da Força, tornando-se Darth Vader e ajudando
+                Darth Sidious a destruir a Ordem Jedi.
+            </p>
+
+            <br>
+
+            <p><b>Diretor:</b> George Lucas</p>
+
+            <p>
+                <b>Elenco:</b> Hayden Christensen,
+                Ewan McGregor, Ian McDiarmid e Natalie Portman.
+            </p>
+
+            <a class="btn-link"
+            href="https://pt.wikipedia.org/wiki/Star_Wars:_Epis%C3%B3dio_III_%E2%80%93_A_Vingan%C3%A7a_dos_Sith"
+            target="_blank">
+                Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://upload.wikimedia.org/wikipedia/pt/1/1d/Harry_Potter_Pedra_Filosofal_2001.jpg">
+
+        <div class="filme-info">
+
+            <h3>Harry Potter e a Pedra Filosofal</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Harry Potter descobre que é um bruxo e inicia seus estudos em
+                Hogwarts, vivendo aventuras ao lado de Rony e Hermione.
+            </p>
+
+            <br>
+
+            <p><b>Diretor:</b> Chris Columbus</p>
+
+            <p>
+                <b>Elenco:</b> Daniel Radcliffe,
+                Emma Watson, Rupert Grint e Alan Rickman.
+            </p>
+
+            <a class="btn-link"
+            href="https://pt.wikipedia.org/wiki/Harry_Potter_e_a_Pedra_Filosofal_%28filme%29"
+            target="_blank">
+                Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="filme-card">
+
+        <img src="https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_.jpg">
+
+        <div class="filme-info">
+
+            <h3>Como Treinar o Seu Dragão</h3>
+
+            <p>
+                <b>Sinopse:</b><br>
+                Soluço desafia a tradição viking ao criar uma amizade com o dragão
+                Banguela, mudando para sempre a relação entre humanos e dragões.
+            </p>
+
+            <br>
+
+            <p><b>Diretores:</b> Chris Sanders e Dean DeBlois</p>
+
+            <p>
+                <b>Elenco:</b> Mason Thames,
+                Nico Parker, Gerard Butler e Julian Dennison.
+            </p>
+
+            <a class="btn-link"
+            href="https://en.wikipedia.org/wiki/How_to_Train_Your_Dragon"
+            target="_blank">
+                Saiba Mais
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<a href="index.html" class="voltar">
+    ⬅ Voltar ao Menu
+</a>
+
+</div>
 
 </body>
 </html>
